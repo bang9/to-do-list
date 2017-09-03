@@ -135,7 +135,7 @@ class Edit extends Component {
                             enablesReturnKeyAutomatically={true}
                             onFocus={this.onFocus}
                             onChangeText={this.onChangeText}
-                            onSubmitEditing={this.onSubmitBody}
+                            blurOnSubmit={false}
                             returnKeyType='done'
                             label='내용'
                             maxLength={200}

@@ -30,7 +30,6 @@ class App extends Component {
     componentWillUnmount() {
     }
     render(){
-
         return(
             <Router navigationBarStyle={styles.navBar}
                     titleStyle={styles.title}
@@ -79,6 +78,7 @@ class App extends Component {
         )
     }
     onBackHandler() {
+        //this.sceneKey => Actions.currentScene
         console.log('BackHandler:this.sceneKey:' + Actions.currentScene);
         if (Actions.currentScene === "main") {
             BackHandler.exitApp();

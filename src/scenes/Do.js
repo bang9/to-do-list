@@ -29,8 +29,8 @@ class Do extends Component {
         this.getList();
     }
 
-    componentWillReceiveProps(){
-        this.getList()
+    componentWillReceiveProps(nextProps){
+        if(nextProps.refresh) this.onRefresh()
     }
 
     componentDidMount() {
